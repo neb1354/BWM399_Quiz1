@@ -1,5 +1,6 @@
 /* Quiz styles */
 /*Variables*/
+/*Mixins*/
 header {
   border: 2px solid #064277;
   border-radius: 20px;
@@ -54,14 +55,14 @@ p {
   font-stlye: normal;
 }
 
-p .samplepara {
+.samplepara {
   border: 3px solid #58a0e0;
   border-radius: 5px;
   padding: 10px;
   background-color: white;
 }
 
-p footer {
+footer {
   border: 2px solid #064277;
   border-radius: 20px;
   margin: 10px auto;
@@ -69,7 +70,7 @@ p footer {
   background-color: aliceblue;
 }
 
-p #footer {
+#footer {
   color: #064277;
   text-align: center;
   font-size: .75em;

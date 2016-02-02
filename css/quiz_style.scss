@@ -7,11 +7,16 @@ $Font-serifs:serif;
 $LMarg:50px;
 $Pad:10px;
 
-header {
+/*Mixins*/
+
+@mixin border($borderProps, $rad){
+	border:$borderProps;
+	border-radius:$rad;
+
+}
  
-	border:2px solid #064277;
-	border-radius: 20px;
-	
+header {
+ @include border(2px solid #064277,20px);
     margin: 10px auto;
     padding: $Pad;
     background-color: $Base;
@@ -36,16 +41,14 @@ h1 {
 }
 
 #content {
-    border: 2px solid #064277;
-    border-radius: 20px;
+  @include border(2px solid #064277,20px);
     margin: 10px auto;
     padding: $Pad;
     background-color: $Base;
 }
 
 #list{
-    border: 2px solid #064277;
-    border-radius: 20px;
+   @include border(2px solid #064277,20px);
     background-color: $Base;
 }
 
@@ -68,18 +71,17 @@ p{
 		stlye:normal;
 	
 }
+}
 
 .samplepara {
 	
-    border: 3px solid #58a0e0;
-    border-radius: 5px;
+@include border(3px solid #58a0e0,5px);
     padding: $Pad;
     background-color: white;
 }
 
 footer {
-    border: 2px solid #064277;
-    border-radius: 20px;
+ @include border(2px solid #064277,20px);
     margin: 10px auto;
     padding: $Pad;
     background-color: $Base;
@@ -97,6 +99,6 @@ footer {
 	}
 
 }
-}
+
 
 
