@@ -1,21 +1,26 @@
 /* Quiz styles */
+/*Variables*/
+$Base: aliceblue;
+$Font:sans-serif;
+$LMarg:50px;
+$Pad:10px;
 
 header {
     border: 2px solid #064277;
     border-radius: 20px;
     margin: 10px auto;
-    padding: 10px;
-    background-color: aliceblue;
+    padding: $Pad;
+    background-color: $Base;
     text-align: center;
 }
 
 body {
     width: 600px;
     margin: auto;
-    font-family:sans-serif;
+    font-family:$Font;
     font-size: 1em;
     font-style:oblique;
-    background-color: #dadadb
+    background-color: #dadadb;
 }
 
 
@@ -27,14 +32,14 @@ h1 {
     border: 2px solid #064277;
     border-radius: 20px;
     margin: 10px auto;
-    padding: 10px;
-    background-color: aliceblue;
+    padding: $Pad;
+    background-color: $Base;
 }
 
 #list{
     border: 2px solid #064277;
     border-radius: 20px;
-    background-color: aliceblue;
+    background-color: $Base;
 }
 
 h2 {
@@ -42,12 +47,12 @@ h2 {
 }
 
 h3 {
-    margin-left: 50px;
+    margin-left: $LMarg;
     color:#58a0e0
 }
 
 ul{
-    margin-left: 50px;
+    margin-left: $LMarg;
 }
 
 p{
@@ -58,7 +63,7 @@ p{
 .samplepara {
     border: 3px solid #58a0e0;
     border-radius: 5px;
-    padding: 10px;
+    padding: $Pad;
     background-color: white;
 }
 
@@ -66,8 +71,8 @@ footer {
     border: 2px solid #064277;
     border-radius: 20px;
     margin: 10px auto;
-    padding: 10px;
-    background-color: aliceblue;
+    padding: $Pad;
+    background-color: $Base;
 }
 
 #footer {
